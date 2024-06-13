@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Maltuna Brand</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/migual-altuna-logo-header.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.css" />
+<script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+    <script src="assets/js/javascript.js"></script>
+  <!-- =======================================================
+  * Template Name: Gp
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    
+    <style>
+        .dropzone {
+            border: dashed 4px #ddd !important ;
+            background-color: #f2f6fc;
+            border-radius: 15px;
+        }
+    
+        .dropzone .dropzone-container {
+            padding: 2rem 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #8c96a8;
+            z-index: 20;
+        }
+    
+        .dropzone .file-input {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+        }
+
+        .file-icon{
+            font-size: 60px;
+        }
+        .hr-sect {
+            display: flex;
+            flex-basis: 100%;
+            align-items: center;
+            margin: 8px 0px;
+        }
+        .hr-sect:before,
+        .hr-sect:after {
+            content: "";
+            flex-grow: 1;
+            background: #ddd;
+            height: 1px;
+            font-size: 0px;
+            line-height: 0px;
+            margin: 0px 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+   <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html" onclick="bukatuSaioa()">Maltuna Brand</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    <a href="index.html" class="get-started-btn scrollto" onclick="bukatuSaioa()">Bukatu Saioa</a>
+
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Gehitu Produktua</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Gehitu Produktua</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page p-0" >
+      <div id="container" class="col-md-offset-8 m-5">
+          <div class="row">
+                 <div id="addproduct-accordion" class="custom-accordion">
+                    <div class="card">
+                        <a href="#addproduct-billinginfo-collapse" class="text-dark" data-bs-toggle="collapse" aria-expanded="true" aria-controls="addproduct-billinginfo-collapse">
+                            <div class="p-4 ">
+
+                                <div class="media d-flex flex-row justify-content-between">
+                                    <div class="media-body overflow-hidden">
+                                        <h5 class="font-size-16 mb-1">Produktuaren Informazioa</h5>
+                                        <p class="text-muted text-truncate mb-0">Bete produktuaren informazioa behean</p>
+                                    </div>
+                                    <i class="bi bi-chevron-up"></i>
+                                </div>
+
+                            </div>
+                        </a>
+
+                        <div id="addproduct-billinginfo-collapse" class="collapse show" data-parent="#addproduct-accordion">
+                            <div class="p-4 border-top">
+                                <form>
+                                    <div class="form-group mb-3">
+                                        <label for="productname">Produktu Izena</label>
+                                        <input id="productname" name="productname" type="text" class="form-control">
+                                    </div>
+
+
+                                    <div class="form-group mb-3">
+                                                <label for="manufacturername">Fabrikatzailearen Izena</label>
+                                                <input id="manufacturername" name="manufacturername" type="text" class="form-control">
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label for="data">Data</label>
+                                                <input id="data" name="data" type="text" class="form-control">
+                                            </div>
+
+        
+                                            <div class="form-group mb-3">
+                                                <label for="price">Prezioa</label>
+                                                <input id="price" name="price" type="text" class="form-control">
+                                            </div>
+<!--
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Category</label>
+                                                <select class="form-control select2">
+                                                    <option>Select</option>
+                                                    <option value="EL">Electronic</option>
+                                                    <option value="FA">Fashion</option>
+                                                    <option value="FI">Fitness</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label">Specifications</label>
+
+                                                <select class="select2 form-control select2-multiple" multiple="multiple" data-placeholder="Choose ...">
+                                                    <option value="HI" selected>High Quality</option>
+                                                    <option value="LE" selected>Leather</option>
+                                                    <option value="NO">Notifications</option>
+                                                    <option value="SI">Sizes</option>
+                                                    <option value="DI">Different Color</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+-->
+
+                                    <div class="form-group mb-0">
+                                        <label for="productdesc">Produktuaren Deskripzioa</label>
+                                        <textarea class="form-control" id="productdesc" rows="4"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                     </div>
+                     
+                        <div class="card mt-3">
+                            <a href="#addproduct-img-collapse" class="text-dark collapsed" data-bs-toggle="collapse" aria-expanded="false" aria-controls="addproduct-img-collapse">
+                                <div class="p-4">
+
+                                    <div class="media d-flex flex-row justify-content-between">
+                                        <div class="media-body overflow-hidden">
+                                            <h5 class="font-size-16 mb-1">Product Image</h5>
+                                            <p class="text-muted text-truncate mb-0">Fill all information below</p>
+                                        </div>
+                                        <i class="bi bi-chevron-up"></i>
+                                    </div>
+
+                                </div>
+                            </a>
+                            
+
+                            <div id="addproduct-img-collapse" class="collapse p-3" data-parent="#addproduct-accordion">
+                                <div class="dropzone d-block">
+                                    <label for="files" class="dropzone-container">
+                                        <div class="file-icon"><i class="bi bi-cloud-arrow-up"></i></div>
+                                        <div class="text-center pt-3 px-5">
+                                            <p class="w-80 h5 text-dark fw-bold">Igo prorduktuaren irudia.</p>
+                                            <div class="hr-sect">or</div>
+                                            <button class="btn btn-warning mb-2">Bilatu ordenagailuan</button>
+                                        </div>
+                                    </label>
+                                    <input id="files" name="files[]" type="file" class="file-input" />
+                                </div>
+                            </div>
+                        </div>
+          </div>
+              <div class="d-flex justify-content-end mt-3">
+                <a href="prod_taula_admin.html" class="btn btn-danger m-1"> <i class="uil uil-times mr-1"></i> Cancel </a>
+                <a href="#" class="btn btn-success m-1" onclick="gehitu()"> <i class="uil uil-file-alt mr-1"></i> Save </a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Aitzol Elu</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

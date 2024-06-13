@@ -1,0 +1,6 @@
+All <img> in this HTML file contain attribute "alt".
+This HTML file contains 30 <a> tag without rel attribute.
+This HTML file does not have a <meta name="description" .../> tag
+This HTML file does not have a <meta name="keywords" .../> tag
+This HTML has less than 15, <strong> tag. Count = 0
+This HTML has less than 100, <h1> tag. Count = 0

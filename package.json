@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "scan-html-file": "^1.0.2",
+    "scanning-html-file": "^1.0.0"
+  }
+}
