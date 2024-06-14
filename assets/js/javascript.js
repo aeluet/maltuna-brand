@@ -14,8 +14,12 @@ async function login(){
     password = document.querySelector("#password").value;
     
     await fetch('accounts/accounts.json').then(response => response.json()).then(json_response => accounts_json = json_response);
-    await fetch('concerts/concerts.json').then(response => response.json()).then(json_response => concerts_json = json_response);
-
+    
+    if(localStorage.getItem("concerts").length == 0 ){
+        await fetch('concerts/concerts.json').then(response => response.json()).then(json_response => concerts_json = json_response);
+        localStorage.setItem("concerts", JSON.stringify(concerts_json));
+    }
+    
     
     let sartu = 0;
     for(i = 0; i < accounts_json.length; i++){
@@ -32,7 +36,7 @@ async function login(){
             }
         }
     }
-    localStorage.setItem("concerts", JSON.stringify(concerts_json));
+    
     if(sartu == 0){
         alert("Erabiltzailea edo pasahitza ez dira zuzenak!!");
     }
@@ -51,12 +55,8 @@ function bukatuSaioa(){
     //signOut();
     localStorage.removeItem("username");
     localStorage.removeItem("buying");
-    localStorage.removeItem("blue");
-    localStorage.removeItem("red");
-    localStorage.removeItem("yellow");
-    localStorage.removeItem("green");
     localStorage.removeItem("account");
-    localStorage.removeItem("method");
+    localStorage.removeItem("info");
     window.location.href = 'index.html';
     
 }
